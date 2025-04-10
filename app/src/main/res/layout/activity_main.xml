@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inventoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inventory"/>
+    <LinearLayout
+        android:id="@+id/inventory_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/inv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:contentDescription="inventory image 1"
+            tools:srcCompat="@drawable/ingredient_1" />
+
+        <ImageView
+            android:id="@+id/inv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="inventory image 2"
+            tools:srcCompat="@drawable/ingredient_1" />
+
+        <ImageView
+            android:id="@+id/inv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="inventory image 3"
+            app:srcCompat="@drawable/ingredient_1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/generated_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generated"
+        />
+    <LinearLayout
+        android:id="@+id/generated_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/gen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="fetched image"
+            tools:srcCompat="@drawable/ingredient_1" />
+
+        <ImageView
+            android:id="@+id/gen_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="fetched image"
+            tools:srcCompat="@drawable/ingredient_1" />
+
+        <ImageView
+            android:id="@+id/gen_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="fetched image"
+            tools:srcCompat="@drawable/ingredient_1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_generate"
+        android:text="Generate Ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
